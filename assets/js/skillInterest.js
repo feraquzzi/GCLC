@@ -41,7 +41,7 @@ function submitForm(e){
     document.querySelector('#formresult').innerHTML = "Register to show your interest in learning a new skill.";
     document.querySelector('.right-content').style.display = "block";
     document.getElementById('loader').style.display = "none";
-  },3000);
+  },2500);
 
 
   // Clear form
