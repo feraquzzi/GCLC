@@ -667,7 +667,7 @@ const array = [
       name: 'Amarachi Onwubiko',
       dept: 'Fashion Designing',
       phone: '(090) 340-50100',
-      address: '6,Adegbesan StreetAgunbiade , Itire ikate',
+      address: '6,Adegbesan Street Agunbiade',
       weeklyAttendance: 8.55,
       softSkillAttendance: 10,
       test: 11,
