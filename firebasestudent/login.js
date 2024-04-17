@@ -30,7 +30,7 @@ signinbutton.addEventListener('click', (event) =>{
     signInWithEmailAndPassword(auth, userEmail, userPassword)
     .then((userCredential) => {
 
-        alert('User Created and Signed in Successfully');
+        alert('User Signed in Successfully');
 
         const user = userCredential.user;
         console.log('user', user.email);

@@ -27,7 +27,7 @@ signUpButton.addEventListener("click", (e) => {
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     
-    alert('account successfully created');
+    alert('Account successfully created');
     
     const user = userCredential.user;
     console.log('user', user.email);
