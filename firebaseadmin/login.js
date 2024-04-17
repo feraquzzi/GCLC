@@ -37,6 +37,7 @@ signinbutton.addEventListener('click', (event) =>{
         window.location.href = "admin.html";
     })
     .catch((error) => {
+        alert('Wrong Login details');
         const errorCode = error.code;
         const errorMessage = error.message;
 

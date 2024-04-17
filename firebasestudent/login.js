@@ -30,13 +30,14 @@ signinbutton.addEventListener('click', (event) =>{
     signInWithEmailAndPassword(auth, userEmail, userPassword)
     .then((userCredential) => {
 
-        //alert('User Created and Signed in Successfully');
+        alert('User Created and Signed in Successfully');
 
         const user = userCredential.user;
         console.log('user', user.email);
         window.location.href = "student.html";
     })
     .catch((error) => {
+        alert('Wrong Login details');
         const errorCode = error.code;
         const errorMessage = error.message;
 
