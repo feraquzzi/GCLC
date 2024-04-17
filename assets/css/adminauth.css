@@ -92,6 +92,12 @@ body {
   outline: none;
 }
 
+.bi-eye-slash{
+  position:absolute;
+  left:180px;
+  top: 8px;
+}
+
 button {
   border-radius: 5px;
   padding: 8px;
