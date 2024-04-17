@@ -11,6 +11,8 @@ prof.addEventListener('click', (event) => {
    console.log(studentValue);
 
    const studId = studentValue.toLowerCase();
+
+  
     
     // finding the object 
    const object = array.find(obj => obj.id === studId);
@@ -21,6 +23,8 @@ prof.addEventListener('click', (event) => {
      document.getElementById('profileCheck').style.display = 'none';
 
      document.getElementById('name').innerHTML = object.name;
+     document.getElementById('phoneNum').innerHTML = object.phone;
+     document.getElementById('address').innerHTML = object.address;
      document.getElementById('department').innerHTML = object.dept;
      document.getElementById('studid').innerHTML = object.id;
      document.getElementById('studentPhoto').src = object.image;

@@ -221,7 +221,7 @@ const makeUp = [
     {
         id: 'mup/c23/070',
         image: "https://i.postimg.cc/Y0hKGwym/chioma-akwarande.jpgg",
-        name: 'Chioma Akwarande',
+        name: 'Chioma Akwarandu',
         dept: 'Make-up',
         weeklyAttendance: 9,
         softSkillAttendance: 10,
