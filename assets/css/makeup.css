@@ -1,0 +1,87 @@
+#main{
+    margin-top: 5%;
+    width: 80%;
+    background-color:transparent;
+}
+
+#home{
+    float:left;
+    margin-top:30px !important;
+}
+
+
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 80%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    margin-left:20%;
+  }
+
+  #table-container{
+    margin-left:20%;
+    position:relative !important;
+  }
+
+  @media only screen and (max-width: 1000px){
+    #myInput {
+        background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100% !important; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+        margin-left:0%;
+    }
+
+    #main{
+        margin-top: 20% !important;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #home{
+        float:left;
+        margin-top:10px !important;
+    }
+
+    #table-container{
+        margin-left:1%;
+    }
+  }
+  
+  #table-container table {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+  }
+  
+  #table-container th, #table-container td {
+    text-align: left; /* Left-align text */
+    border: 1px solid #ddd;
+    padding: 12px; /* Add padding */
+  }
+  
+  #table-container tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #table-container tr.header, #table-container tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+  }
+
+.photo{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px rgba(100,100,100, 0.4);
+    width:100px;
+    height:100px;
+}

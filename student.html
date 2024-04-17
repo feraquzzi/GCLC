@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <title>GCLC | STUDENT PORTAL</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./assets/css/student.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+     <!-- Bootstrap core CSS -->
+     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Additional CSS Files -->
+     <link rel="stylesheet" href="assets/css/fontawesome.css">
+     <link href="./assets/css/adminauth.css" rel="stylesheet" />
+ 
+</head>
+<body>
+  <a href="index.html" id="home" class="studentLogout" style="text-decoration: none; color: whitesmoke;">Logout <i class="bi bi-arrow-right"></i></a>
+  <div id="profileCheck" class="adminlogin">
+    <h3 id="welcomeMessage"></h3>
+    <div class="form-container">
+      <form class="form">
+        <span class="heading">Student Profile</span>
+    
+        <div class="form-group">
+          <input  required="" type="text" id="identification" class="form-input"/>
+          <label>Student ID</label>
+        </div>
+    
+        <div class="adminbutton">
+          <button id="button" style="width:100%">See Profile</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+    <div id="container1" class="container" >
+      
+
+      <div class="main-body">
+
+        <!-- Breadcrumb -->
+          <nav  aria-label="breadcrumb" class="main-breadcrumb" >
+            <ol style="background-color: transparent !important; color: lightgrey !important;" class="breadcrumb">
+              <li style="color: #8f1f2f !important;" class="breadcrumb-item"><a style="color: #8f1f2f !important;" href="javascript:void(0)">Home</a></li>
+              <li class="breadcrumb-item"><a style="color: #8f1f2f !important;" href="javascript:void(0)">Student</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Profile</li>
+            </ol>
+          </nav>
+        <!-- /Breadcrumb -->
+      
+        <div class="row gutters-sm">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <img style="border: 2px solid lightgrey !important;" id="studentPhoto" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150" height="150">
+                  <div class="mt-3">
+                    <h4 style="color: lightgrey;" id="name"></h4>
+                    <p class="text-secondary mb-1" id="studid" style="text-transform: uppercase;"></p>
+                    <p class="text-muted font-size-sm" id="department"></p>
+                    <button style="background-color: #8f1f2f !important; border: 1px solid #8f1f2f !important"  class="btn btn-primary">Edit</button>
+                    <button class="studentLogout" style="border: 1px solid #8f1f2f !important;"><a href="studentlogin.html" style="text-decoration: none; color: whitesmoke;">Logout</a> </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      <div class="card mt-3">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+            <h6 class="mb-0"><i class="bi bi-telephone" style="font-size: 22px;"></i></h6>
+            <span class="text-secondary" id="phoneNum"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+            <h6 class="mb-0"><i class="bi bi-geo" style="font-size: 25px;"></i></h6>
+            <span class="text-secondary"></span>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+              <div class="col-md-8">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 style="color: lightgrey;" class="mb-0"> Weekly Attendance</h6>
+                      </div>
+                      <div style="font-size: 18px !important; color: whitesmoke !important;" class="col-sm-9 text-secondary" id="weeklyAttendance" >
+                        Kenneth Valdez
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 style="color: lightgrey;" class="mb-0"> Soft Skill Attendance</h6>
+                      </div>
+                      <div style="font-size: 18px !important; color: whitesmoke !important;" class="col-sm-9 text-secondary" id="softSkillAttendance">
+                        fip@jukmuh.al
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 style="color: lightgrey;" class="mb-0">Mid-Test</h6>
+                      </div>
+                      <div style="font-size: 18px !important; color: whitesmoke !important;" class="col-sm-9 text-secondary" id="midTest">
+                        (239) 816-9029
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 style="color: lightgrey;" class="mb-0">Soft Skill Project</h6>
+                      </div>
+                      <div style="font-size: 18px !important; color: whitesmoke !important;" class="col-sm-9 text-secondary" id="softSkillProject">
+                        (320) 380-4539
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 style="color: lightgrey;" class="mb-0">Final Assessment</h6>
+                      </div>
+                      <div style="font-size: 18px !important; color: whitesmoke !important;" class="col-sm-9 text-secondary" id="finalAssessment">
+                        Bay Area, San Francisco, CA
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h6 style="color: lightgrey;" class="mb-0">Total Score</h6>
+                      </div>
+                      <div style="font-size: 20px !important; color: whitesmoke !important; font-weight: bold;" class="col-sm-9 text-secondary" id="totalScore">
+                        Bay Area, San Francisco, CA
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+  
+                <div class="row gutters-sm">
+                  <div class="col-sm-6 mb-3">
+                    <div class="card h-100">
+                      <div class="card-body1" style="background-image: url('./assets/images/grad.jpg'); background-size: cover;">
+                        <div style="background-color: rgba(24, 35, 58, 0.7); width: 100%; float:left; color: #fff;" class="card-body" >
+                          <h6 style="color: whitesmoke; margin-bottom: 7%; font-weight: 800;"> UPCOMING EVENTS</h6>
+                          <p>- Gbodo Cares 3-month intensive skills acquisition Batch C Graduation party</p>
+                          <p>- Gbodo Cares Skills Acquisition center - 3 Years anniversary</p>
+                          <P>- Yo Studios Launch</P>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 mb-3">
+                    <div class="card h-100">
+                      <div class="card-body1" style="background-image: url('./assets/images/counter.jpg'); background-size: cover;">
+                        <div style="background-color: rgba(24, 35, 58, 0.7); width: 100%; height:100%; float:left;" class="card-body" >
+                          <h6 style="color: whitesmoke; margin-bottom: 7%;">EVENT COUNTDOWN &nbsp; - &nbsp;<span id="expired"></span></h6>
+                          <div id="countdown" >
+                            <div class="days" style="box-sizing: border-box;">
+                              <div class="topd" style="font-size: 18px; width:100%; height:40px; background-color: transparent; float:left; display: flex; justify-content: center; align-items: center; font-weight: 800; letter-spacing: 1px;">
+                                
+                              </div>
+
+                              <div class="botd" style="width:100%; height:25px; background-color: transparent; float:left; display: flex; justify-content: center; align-items: center; color: #8f1f2f; font-weight: 600;">
+                                <p>Days</p>
+                              </div>
+                            </div>
+                            <div class="hours">
+                              <div class="toph" style="font-size: 18px;width:100%; height:40px; background-color: transparent; float:left; display: flex; justify-content: center; align-items: center; font-weight: 800; letter-spacing: 1px;">
+                                
+                              </div>
+
+                              <div class="both" style="width:100%; height:25px; background-color: transparent; float:left; display: flex; justify-content: center; align-items: center; color: #8f1f2f; font-weight: 600;">
+                                <p>Hours</p>
+                              </div>
+                            </div>
+                            <div class="mins">
+                              <div class="topm" style="font-size: 18px;width:100%; height:40px; background-color: transparent; float:left; display: flex; justify-content: center; align-items: center; font-weight: 800; letter-spacing: 1px;">
+                                
+                              </div>
+
+                              <div class="botm" style="width:100%; height:25px; background-color: transparent; float:left; display: flex; justify-content: center; align-items: center; color: #8f1f2f; font-weight: 600;">
+                                <p>Mins</p>
+                              </div>
+                            </div>
+                            <div class="secs">
+                              <div class="tops" style="font-size: 18px; width:100%; height:40px; background-color: transparent; float:left; display: flex; justify-content: center; align-items: center; font-weight: 800; letter-spacing: 1px;">
+                                
+                              </div>
+
+                              <div class="bots" style="width:100%; height:25px; background-color: transparent; float:left; display: flex; justify-content: center; align-items: center; color: #8f1f2f; font-weight: 600;">
+                                <p>Secs</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+    
+                </div>
+              </div>
+    
+            </div>
+    </div>
+        <!-- Scripts -->
+      <script src="./firebasestudent/update.js" type="module" defer ></script>
+    <script src="./assets/js/studentlist.js"></script>
+    <script src="./assets/js/student.js"></script>
+    <script src="./assets/js/countdown.js"></script>
+    
+</body>
+</html>
