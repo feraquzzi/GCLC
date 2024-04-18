@@ -20,7 +20,7 @@
         position:absolute;
         top:80px;
         color: #fff;
-        left: 110px;
+        left: 75px;
     }
 }
 
@@ -61,7 +61,7 @@
   @media only screen and (max-width: 1000px) {
     .progress-loader {
         top: 60px !important;
-        left: 260px;
+        left: 230px;
         position: absolute;
         transform: translate(-50%, -50%);
         width: 180px;
