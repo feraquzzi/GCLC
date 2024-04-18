@@ -23,7 +23,7 @@ const firebaseConfig = {
         const credential = GoogleAuthProvider.credentialFromResult(result);
         const user = result.user;
         console.log(user);
-        window.location.href = 'admin.html';
+        window.location.href = 'student.html';
 
     }).catch((error) => {
         const errorCode = error.code;

@@ -20,10 +20,14 @@ const firebaseConfig = {
   function updateUserProfile(user){
     //const username = user.displayName;
     const userEmail = user.email;
+    const userName = user.displayName;
+    const profileImage = user.photoURL;
     //const userInitial = userEmail.substring(0, 1);
     //const userProfilePicture = user.photoURL;
 
-    document.getElementById('welcomeMessage').textContent = 'Welcome,' + ' ' + userEmail;
+    document.getElementById('welcomeMessage').textContent = 'Welcome,' + ' ' + userName;
+    //document.getElementById('email').textContent = userEmail;
+    document.getElementById('photoProfile').src = profileImage;
 
   }
 

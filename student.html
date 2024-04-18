@@ -21,6 +21,13 @@
 <body>
   <a href="index.html" id="home" class="studentLogout" style="text-decoration: none; color: whitesmoke;">Logout <i class="bi bi-arrow-right"></i></a>
   <div id="profileCheck" class="adminlogin">
+      
+    <div style="border: none !important; box-shadow: 0px 0px 0px 0px white;" class="card">
+      <div class="d-flex flex-column align-items-center text-center">
+        <img style="border: 2px solid lightgrey !important; margin-bottom: 20%;" id="photoProfile" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150" height="150">
+      </div>
+    </div>
+      
     <h3 id="welcomeMessage"></h3>
     <div class="form-container">
       <form class="form">
@@ -48,7 +55,7 @@
           <nav  aria-label="breadcrumb" class="main-breadcrumb" >
             <ol style="background-color: transparent !important; color: lightgrey !important;" class="breadcrumb">
               <li style="color: #8f1f2f !important;" class="breadcrumb-item"><a style="color: #8f1f2f !important;" href="javascript:void(0)">Home</a></li>
-              <li class="breadcrumb-item"><a style="color: #8f1f2f !important;" href="javascript:void(0)">Student</a></li>
+              <li class="breadcrumb-item"><a style="color: #8f1f2f !important;" href="student.html">Student</a></li>
               <li class="breadcrumb-item active" aria-current="page">Profile</li>
             </ol>
           </nav>
@@ -64,8 +71,6 @@
                     <h4 style="color: lightgrey;" id="name"></h4>
                     <p class="text-secondary mb-1" id="studid" style="text-transform: uppercase;"></p>
                     <p class="text-muted font-size-sm" id="department"></p>
-                    <button style="background-color: #8f1f2f !important; border: 1px solid #8f1f2f !important"  class="btn btn-primary">Edit</button>
-                    <button class="studentLogout" style="border: 1px solid #8f1f2f !important;"><a href="studentlogin.html" style="text-decoration: none; color: whitesmoke;">Logout</a> </button>
                   </div>
                 </div>
               </div>
@@ -216,7 +221,7 @@
             </div>
     </div>
         <!-- Scripts -->
-      <script src="./firebasestudent/update.js" type="module" defer ></script>
+    <script src="./firebasestudent/update.js" type="module" defer ></script>
     <script src="./assets/js/studentlist.js"></script>
     <script src="./assets/js/student.js"></script>
     <script src="./assets/js/countdown.js"></script>
