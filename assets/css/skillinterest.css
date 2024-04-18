@@ -61,7 +61,7 @@
   @media only screen and (max-width: 1000px) {
     .progress-loader {
         top: 60px !important;
-        left: 230px;
+        left: 215px;
         position: absolute;
         transform: translate(-50%, -50%);
         width: 180px;
