@@ -13,6 +13,27 @@ firebase.initializeApp(firebaseConfig);
 // Reference messages collection
 var messagesRef = firebase.database().ref('Interests'); 
 
+var fname = getInputVal('name');
+var email = getInputVal('email');
+var phone = getInputVal('phone');
+var skill = getInputVal('skill');
+
+function sendEmail() {
+  Email.send({
+      Host: "smtp.gmail.com",
+      Username: fname,
+      Password: "Enter your password",
+      To: email,
+      From: "gclcsupport@gmail.com",
+      Subject: "INTEREST IN LEARNING A SKILL",
+      Body: "Hello Prospect, your interest in learning a skill has been recieved. We will keep you posted."
+  })
+
+  .then(function (message) {
+     alert("mail sent successfully")
+  });
+}
+
 // Listen for form submit
 document.getElementById('contact').addEventListener('submit', submitForm);
 
@@ -21,14 +42,13 @@ function submitForm(e){
   e.preventDefault();
 
   //Get value
-  var name = getInputVal('name');
-  var email = getInputVal('email');
-  var phone = getInputVal('phone');
-  var skill = getInputVal('skill');
+  
   
 
   // Save message
-  saveMessage(name, email, phone, skill);
+  saveMessage(fname, email, phone, skill);
+
+  sendEmail();
 
   document.querySelector('.right-content').style.display = "none";
 
@@ -58,7 +78,7 @@ function getInputVal(id){
 function saveMessage(name, email, phone, skill){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
-    name: name,
+    name: fname,
     email: email,
     phone: phone,
     skill: skill

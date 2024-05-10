@@ -81,10 +81,10 @@ const hair = [
         name: 'Tomisin Sanusi',
         dept: 'Hairdressing',
         weeklyAttendance: 7.5,
-        softSkillAttendance: 0,
+        softSkillAttendance: 5,
         test: 7,
         softSkillProject: 15.5,
-        finalProject: 15,
+        finalProject: 29,
         allScores: function(){
           return this.weeklyAttendance + this.softSkillAttendance + this.test + this.softSkillProject + this.finalProject
         }
